@@ -1,4 +1,4 @@
-# Anderson-Localization-
+# Anderson-Localization
 This project consists in studying the Anderson transition in strongly magnetized QCD.
 
 Most of the files contain 400 eigenvalues measured with dyniso. Some files (in particular the
@@ -16,3 +16,19 @@ column.
 
 The ensembles that are complete, i.e., that have all magnetic fields measured on all the available
 configurations contain an empty file named COMPLETE. 
+
+# LCP code
+
+There are two ways of using the LCP code:
+
+1 - To calculate the lattice spacing "a" in fm for a given beta:
+
+    python3 lcp_2stout.py -a <beta>
+
+   where <beta> is the inverse gauge coupling
+
+2 - To calculate beta from the lattice spacing:
+
+   python3 lcp_2stout.py -b <a>
+
+   where <a> is the lattice spacing in fm.
