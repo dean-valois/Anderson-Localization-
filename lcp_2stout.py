@@ -4,7 +4,7 @@ import sys
 
 def beta_a_interp(type):
     a, beta = np.loadtxt("lcp_sort.dat",usecols=(0,1),unpack=True)
-    
+
     if (type == "latspacing"): f_beta_a = interp1d(beta,a,kind="cubic")
     elif (type == "beta"): f_beta_a = interp1d(a,beta,kind="cubic")
 
